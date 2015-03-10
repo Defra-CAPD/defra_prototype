@@ -2,8 +2,20 @@
 // List of businesses
 
 .business-list{
+  margin: $gutter 0;
+  border-top: 1px solid $border-colour;
   li{
-    padding-bottom: 20px;
+    padding: 13px 0 13px 0;
+    border-bottom: 1px solid $border-colour;
+  }
+}
+
+.application-list{
+  margin: $gutter 0;
+  border-top: 1px solid $border-colour;
+  li{
+    padding: 13px 0 13px 0;
+    border-bottom: 1px solid $border-colour;
   }
 }
 

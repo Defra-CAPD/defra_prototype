@@ -15,8 +15,13 @@
     .message-date{
       display: inline-block;
       float: right;
-      margin-top:  4px;
-      width: 120px;
+      margin-top:  8px;
+      font-size: 16px;
+    }
+    .message-content{
+      display: block;
+      margin: 20px;
+      font-size: 16px;
     }
     .delete{
       display: block;
@@ -32,7 +37,7 @@
       margin-bottom: 0;
       //max-width: 400px;
 
-      summary::-webkit-details-marker { display:none; }
+      //summary::-webkit-details-marker { display:none; }
 
       summary{
         text-decoration: underline;
@@ -46,3 +51,19 @@ table.messages {
     text-align: right;
   }
 }
+
+.new-tag{background: #DF3034;
+  color: #FFF;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 2px 5px;
+}
+
+.new-message{
+  summary{
+    font-weight: bold;
+  }
+}
+
