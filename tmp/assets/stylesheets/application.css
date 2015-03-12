@@ -2595,6 +2595,12 @@ details .hcard-adr {
   margin-top: 2px;
 }
 
+.bps-submitted-indicator {
+  float: right;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
 table.parcel-list {
   margin: 30px 0;
 }
