@@ -11,6 +11,11 @@ layout: layout-full-width
   </header>
 
 
+  <p>
+    Welcome, Ian Barclay
+    <br><br>
+  </p>
+
     <ul class="account-links">
       <li><a href="account">Your details</a></li>
     </ul>
@@ -42,6 +47,7 @@ layout: layout-full-width
                 <span>Black Horse Lane, Reading R5 6PQ</span></a>
               </li>
               <li>
+                <div class="new-message-indicator"><a href="">1 new message</a></div>
                 <a href="/business">Agri Agents Ltd.
                 <span>Low Street, West Yorkshire, YR4 XP2</span></a>
               </li>
@@ -60,11 +66,35 @@ layout: layout-full-width
 
           <h2 class="heading-large">Messages</h2>
 
+          <div class="business-filter">
+            <label>Show messages for
+              <select>
+                <option>all businesses</option>
+                <option>--------------</option>
+                <option>Black Horse Farm</option>
+                <option>Agri Agents Ltd</option>
+                <option>Bodmin Agri Ltd</option>
+              </select>
+            </label>
+          </div>
 
-          <p>You have 1 unread message.</p>
+
+          <p>You have 1 new message.</p>
 
            <ul class="message-list">
               <li class="new-message">
+                <strong class="message-date">15 Sep 2014</strong>
+                <details class="text">
+                  <summary>You have been given access to Agri Agents Ltd.</summary>
+
+                  <span class="message-content">
+                    <p>John Smith has given you permission to view and amend information about this business and make applications on their behalf.</p>
+                    <p><a href="">Go to this business</a>.</p>
+                  </span>
+
+                </details>
+              </li>
+              <li>
                 <strong class="message-date">10 Sep 2014</strong>
                 <details class="text">
                   <summary>You have been given access to Bodmin Agri Ltd.</summary>

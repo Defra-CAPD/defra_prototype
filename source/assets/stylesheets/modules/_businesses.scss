@@ -54,6 +54,21 @@
   }
 }
 
+.business-filter{
+  float: right;
+  select{
+    margin-left: 10px;
+  }
+  label{
+    font-size: 16px;
+  }
+}
+
+.new-message-indicator{
+  float: right;
+  font-size: 16px;
+  margin-top: 2px;
+}
 
 
 
