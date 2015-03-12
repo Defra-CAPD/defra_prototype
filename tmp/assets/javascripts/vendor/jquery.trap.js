@@ -1,0 +1,9 @@
+/*!
+Copyright (c) 2011, 2012 Julien Wajsberg <felash@gmail.com>
+All rights reserved.
+
+Official repository: https://github.com/julienw/jquery-trap-input
+License is there: https://github.com/julienw/jquery-trap-input/blob/master/LICENSE
+This is version 1.2.0.
+*/
+!function(t,e){function n(t){if(9===t.keyCode){var e=!!t.shiftKey;i(this,t.target,e)&&(t.preventDefault(),t.stopPropagation())}}function i(t,e,n){var i,r,a,u,d=f(t),o=e;do{switch(i=d.index(o),r=i+1,a=i-1,u=d.length-1,i){case-1:return!1;case 0:a=u;break;case u:r=0}n&&(r=a),o=d.get(r);try{o.focus()}catch(c){}}while(e===e.ownerDocument.activeElement);return!0}function r(){return this.tabIndex>0}function a(){return!this.tabIndex}function u(t,e){return t.t-e.t||t.i-e.i}function f(e){var n=t(e),i=[],f=0;return l.enable&&l.enable(),n.find("a[href], link[href], [draggable=true], [contenteditable=true], :input:enabled, [tabindex=0]").filter(":visible").filter(a).each(function(t,e){i.push({v:e,t:0,i:f++})}),n.find("[tabindex]").filter(":visible").filter(r).each(function(t,e){i.push({v:e,t:e.tabIndex,i:f++})}),l.disable&&l.disable(),i=t.map(i.sort(u),function(t){return t.v}),t(i)}function d(){return this.keydown(n),this.data(s,!0),this}function o(){return this.unbind("keydown",n),this.removeData(s),this}function c(){return!!this.data(s)}var s="trap.isTrapping";t.fn.extend({trap:d,untrap:o,isTrapping:c});var l={};t.find.find&&t.find.attr!==t.attr&&function(){function n(t){var n=t.getAttributeNode(a);return n&&n.specified?parseInt(n.value,10):e}function i(){u[a]=u.tabIndex=n}function r(){delete u[a],delete u.tabIndex}var a="tabindex",u=t.expr.attrHandle;l={enable:i,disable:r}}()}(jQuery);
