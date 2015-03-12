@@ -63,6 +63,12 @@ layout: layout-full-width
 
         <div class="tabs-panel" id="messages">
 
+
+
+
+          <div class="grid-row">
+            <div class="column-third">
+
                 <h2 class="heading-large">Messages</h2>
 
 
@@ -79,8 +85,6 @@ layout: layout-full-width
                   </label>
                 </div>
 
-              -->
-
                 <div class="business-filter">
                   <label>Show messages for
                     <select>
@@ -93,8 +97,37 @@ layout: layout-full-width
                   </label>
                 </div>
 
+              -->
 
-          <p>You have 1 new message.</p>
+              <p class="font-xsmall">Use the filters to only show the messages you want to see.</p>
+
+
+              <fieldset>
+
+                <legend class="visuallyhidden">Filter messages</legend>
+
+                <div id="keyword-filter" class="filter">
+                  <label class="title" for="keywords">Contains</label>
+                  <input id="keywords" name="keywords" placeholder="keywords" type="text" value="" class="form-control">
+                </div>
+
+                <div class="filter">
+                  <label for="topics">Business</label>
+                  <select class="single-row-select" id="topics" name="topics[]">
+                    <option selected="" value="all">All businesses</option>
+                  </select>
+                </div>
+
+                <input class="button js-hidden" name="commit" type="submit" value="Refresh results">
+
+              </fieldset>
+
+
+
+            </div>
+            <div class="column-two-thirds">
+
+          <p style="margin-top: 57px;">You have 1 new message.</p>
 
            <ul class="message-list">
               <li class="new-message">
@@ -140,6 +173,9 @@ layout: layout-full-width
                 </details>
               </li>
             </ul>
+
+            </div>
+          </div>
 
       </div>
 

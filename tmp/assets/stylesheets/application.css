@@ -3240,6 +3240,37 @@ table.messages .date {
   font-weight: bold;
 }
 
+.filter {
+  font-size: 16px;
+}
+.filter input {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.filter label {
+  font-weight: bold;
+  margin-top: 20px;
+}
+.filter .single-row-select {
+  border: 1px solid #BFC1C3;
+  padding: 5px 20px 5px 10px;
+  font-size: 12px;
+  width: 100%;
+  background: #FFF;
+  background-image: url("/assets/images/dropdown-arrow-small.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-box-shadow: 1px 1px 1px #FFF;
+  -moz-box-shadow: 1px 1px 1px #fff;
+  box-shadow: 1px 1px 1px #FFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 .check-list {
   padding: 0;
 }
