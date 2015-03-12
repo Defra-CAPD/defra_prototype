@@ -1542,7 +1542,7 @@ a:link {
   border-left: 4px solid #df3034;
   clear: both;
   margin: 0 0 1.05263em;
-  padding: 1.05263em;
+  padding: 0 1.05263em;
 }
 
 .alert-success {
@@ -1551,7 +1551,6 @@ a:link {
 }
 
 .alert-info {
-  background-color: rgba(191, 193, 195, 0.1);
   border-color: #bfc1c3;
 }
 
@@ -2532,8 +2531,22 @@ details .hcard-adr {
   margin-left: -20px;
 }
 
+.business-list {
+  margin: 30px 0;
+  border-top: 1px solid #bfc1c3;
+}
 .business-list li {
-  padding-bottom: 20px;
+  padding: 13px 0 13px 0;
+  border-bottom: 1px solid #bfc1c3;
+}
+
+.application-list {
+  margin: 30px 0;
+  border-top: 1px solid #bfc1c3;
+}
+.application-list li {
+  padding: 13px 0 13px 0;
+  border-bottom: 1px solid #bfc1c3;
 }
 
 .account-links {
@@ -2542,6 +2555,44 @@ details .hcard-adr {
 }
 .account-links li {
   float: right;
+}
+
+.inline-modal {
+  clear: both;
+  border: 4px solid #bfc1c3;
+  padding: 15px 0 5px 15px;
+  margin: 30px 15px 45px 0;
+}
+.inline-modal > * {
+  margin-top: 0;
+}
+
+.action-list li {
+  margin-bottom: 10px;
+}
+
+.business-table td {
+  font-size: 19px;
+  vertical-align: top;
+}
+.business-table td > * {
+  margin-top: 0;
+}
+
+.business-filter {
+  float: right;
+}
+.business-filter select {
+  margin-left: 10px;
+}
+.business-filter label {
+  font-size: 16px;
+}
+
+.new-message-indicator {
+  float: right;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 table.parcel-list {
@@ -3142,8 +3193,12 @@ a.warning {
 .message-list > li .message-date {
   display: inline-block;
   float: right;
-  margin-top: 4px;
-  width: 120px;
+  margin-top: 8px;
+  font-size: 16px;
+}
+.message-list > li .message-content {
+  display: block;
+  margin: 20px;
 }
 .message-list > li .delete {
   display: block;
@@ -3158,15 +3213,26 @@ a.warning {
   color: #0b0c0c;
   margin-bottom: 0;
 }
-.message-list > li details summary::-webkit-details-marker {
-  display: none;
-}
 .message-list > li details summary {
   text-decoration: underline;
 }
 
 table.messages .date {
   text-align: right;
+}
+
+.new-tag {
+  background: #DF3034;
+  color: #FFF;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 2px 5px;
+}
+
+.new-message summary {
+  font-weight: bold;
 }
 
 .check-list {
@@ -3410,7 +3476,7 @@ table .last {
   width: 30%;
 }
 .efa-table .feature-length {
-  width: 12%;
+  width: 16%;
 }
 .efa-table .feature-area {
   width: 12%;
@@ -3421,6 +3487,23 @@ table .last {
 .efa-table .efa-area {
   width: 12%;
   padding-right: 0;
+}
+.efa-table .hedge-sides::first-child {
+  margin-bottom: 10px;
+}
+.efa-table .hedge-sides .side-label {
+  display: inline-block;
+  width: 50px;
+}
+.efa-table .hedge-sides .side-value {
+  display: inline-block;
+  width: 70px;
+  margin-left: 15px;
+  text-align: right;
+  padding: 5px;
+}
+.efa-table .hedge-sides span.side-value {
+  width: 60px;
 }
 .efa-table .parcel-name {
   vertical-align: top;
@@ -3819,8 +3902,8 @@ select.link-style {
   color: #2e8aca;
 }
 
-.tabs .grid-row {
-  margin: 0 -30px;
+.tabs-content {
+  padding: 1em 0 0 !important;
 }
 
 .js-enabled .js-hidden {

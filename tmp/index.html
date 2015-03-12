@@ -145,6 +145,11 @@
   </header>
 
 
+  <p>
+    Welcome, Ian Barclay
+    <br><br>
+  </p>
+
     <ul class="account-links">
       <li><a href="account">Your details</a></li>
     </ul>
@@ -155,8 +160,8 @@
 
         <ul class="tabs-list">
           <li class="active"><a href="#businesses">Businesses</a></li>
+          <li><a href="#messages">Messages (1<span class="visuallyhidden"> new</span>)</a></li>
           <li><a href="#applications">Applications</a></li>
-          <li><a href="#messages">Messages <!--<span class="tag">1<span class="visuallyhidden"> new</span></span>--></a></li>
         </ul>
 
       </div>
@@ -165,105 +170,82 @@
 
         <div class="tabs-panel" id="businesses">
 
-        <div class="grid-row">
 
-          <div class="column-two-thirds">
 
 
             <h2 class="heading-large">Businesses</h2>
 
-
-            <p>These are the businesses you manage:</p>
-
             <ul class="business-list">
               <li>
-                <a class="bold-medium" href="/businessxx">Bodmin Agri Ltd.</a>
-                <div class="secondary-text">Monument Way, Bodmin PL31 1NZ</div>
+                <a href="/business">Black Horse Farm.
+                <span>Black Horse Lane, Reading R5 6PQ</span></a>
+              </li>
+              <li>
+                <div class="new-message-indicator"><a href="">1 new message</a></div>
+                <a href="/business">Agri Agents Ltd.
+                <span>Low Street, West Yorkshire, YR4 XP2</span></a>
+              </li>
+              <li>
+                <a href="/business">Bodmin Agri Ltd.
+                <span>Monument Way, Bodmin PL31 1NZ</span></a>
               </li>
             </ul>
 
-            <p><a class="" href="add-businessxx">Add another business</a></p>
-
-
-          </div>
-
-        </div>
-
-        </div>
-
-        <div class="tabs-panel" id="applications">
-
-          <div class="grid-row">
-
-            <div class="column-two-thirds">
-
-              <h2 class="heading-large">Applications</h2>
-
-              <p>These are your scheme applications:</p>
-
-              <table>
-
-                <caption class="visuallyhidden">Busness applications listing</caption>
-
-                <thead>
-
-                  <tr>
-                    <th scope="col">Business</th>
-                    <th scope="col">Status</th>
-                    <th class="action" scope="col"><span class="visuallyhidden">Action</span></th>
-                  </tr>
-
-                </thead>
-
-                <tbody>
-
-                  <tr>
-                    <td scope="row" data-title="Business">Beech Farm</td>
-                    <td data-title="Status">In Progress</td>
-                    <td class="action last"><a href="/">Continue <span class="visuallyhidden">Beech Farm</span></a></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" data-title="Business">Red Farm</td>
-                    <td data-title="Status">In Progress</td>
-                    <td class="action last"><a href="/">Continue <span class="visuallyhidden">Red Farm</span></a></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" data-title="Business">Ashbury Company</td>
-                    <td data-title="Status">Submitted</td>
-                    <td class="action last"><a href="/">View <span class="visuallyhidden">Ashbury Company</span></a></td>
-                  </tr>
-
-                </tbody>
-
-              </table>
-
-            </div>
-
-          </div>
+            <p><a class="button" href="add-business">Add another business</a></p>
 
         </div>
 
         <div class="tabs-panel" id="messages">
 
-        <div class="grid-rowx">
-
-            <div class="column-two-thirdsx">
 
           <h2 class="heading-large">Messages</h2>
 
+          <div class="business-filter">
+            <label>Show messages for
+              <select>
+                <option>all businesses</option>
+                <option>--------------</option>
+                <option>Black Horse Farm</option>
+                <option>Agri Agents Ltd</option>
+                <option>Bodmin Agri Ltd</option>
+              </select>
+            </label>
+          </div>
 
-          <p>You have 1 new message:</p>
+
+          <p>You have 1 new message.</p>
 
            <ul class="message-list">
+              <li class="new-message">
+                <strong class="message-date">15 Sep 2014</strong>
+                <details class="text">
+                  <summary>You have been given access to Agri Agents Ltd.</summary>
+
+                  <span class="message-content">
+                    <p>John Smith has given you permission to view and amend information about this business and make applications on their behalf.</p>
+                    <p><a href="">Go to this business</a>.</p>
+                  </span>
+
+                </details>
+              </li>
               <li>
-                <span class="delete"><a href="">archive</a></span>
+                <strong class="message-date">10 Sep 2014</strong>
+                <details class="text">
+                  <summary>You have been given access to Bodmin Agri Ltd.</summary>
+
+                  <span class="message-content">
+                    <p>John Smith has given you permission to view and amend information about this business and make applications on their behalf.</p>
+                    <p><a href="">Go to this business</a>.</p>
+                  </span>
+
+                </details>
+              </li>
+              <li>
                 <strong class="message-date">5 Sep 2014</strong>
                 <details class="text">
                   <summary>Welcome to Rural Payments</summary>
 
-                  <p>Welcome John Smith,</p>
+                  <span class="message-content">
 
                   <p>
                     You can use this service to apply for Rural Payments schemes.
@@ -273,14 +255,38 @@
                   <p>Regards,</p>
 
                   <p>The Rural Payments team</p>
+                  </span>
                 </details>
               </li>
             </ul>
 
-            <p><a href="">View archived messages</a></p>
+      </div>
 
-          </div>
-        </div>
+
+        <div class="tabs-panel" id="applications">
+
+              <h2 class="heading-large">Applications in progress</h2>
+
+
+              <ul class="application-list">
+                <li>
+                  <a href="/business">Black Horse Farm,
+                  <span>Basic Payment Scheme</span></a>
+                </li>
+                <li>
+                  <a href="/business">Agri Agents Ltd.
+                  <span>Basic Payment Scheme</span></a>
+                </li>
+              </ul>
+
+              <h2 class="heading-large">Submitted applications</h2>
+
+              <ul class="application-list">
+                <li>
+                  <a href="/business">Bodmin Agri Ltd.
+                  <span>Basic Payment Scheme</span></a>
+                </li>
+              </ul>
 
         </div>
 
