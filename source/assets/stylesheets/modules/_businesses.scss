@@ -77,5 +77,21 @@
 }
 
 
-
+.business-list-sortable{
+  tbody th{
+    font-size: 19px;
+    a{
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+      span{
+        display: block;
+        font-size: 16px;
+        font-weight: normal;
+        color: $secondary-text-colour;
+      }
+  }
+}
 

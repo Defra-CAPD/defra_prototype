@@ -439,24 +439,25 @@ p {
   max-width: 30em;
 }
 
-.text-secondary, .steps-pos {
+.text-secondary, .steps-pos, table .sbi,
+table .email {
   color: #6f777b;
 }
 
-.link {
+.link, .js-table-sortable [data-sort] {
   color: #005ea5;
   text-decoration: underline;
 }
 
-.link:visited {
+.link:visited, .js-table-sortable [data-sort]:visited {
   color: #4c2c92;
 }
 
-.link:hover {
+.link:hover, .js-table-sortable [data-sort]:hover {
   color: #2e8aca;
 }
 
-.link:active {
+.link:active, .js-table-sortable [data-sort]:active {
   color: #005ea5;
 }
 
@@ -2384,6 +2385,167 @@ details .hcard-adr {
   padding-left: 0;
 }
 
+table {
+  margin-bottom: 2.10526em;
+}
+table .sbi,
+table .email {
+  font-weight: normal;
+}
+table .last {
+  padding-right: 0;
+  text-align: right;
+}
+table .top {
+  vertical-align: top;
+}
+table .text-normal {
+  font-weight: normal;
+}
+table .action {
+  text-align: right;
+}
+table .form-control, table .form-control-textarea {
+  font-family: sans-serif;
+  font-size: 12pt;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  margin: -5px 0;
+  position: relative;
+  top: -1px;
+  width: auto;
+}
+@media (max-width: 640px) {
+  table .form-control, table .form-control-textarea {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+table .totals th, table .totals td {
+  border-bottom-color: #0b0c0c;
+}
+table tfoot {
+  border-top: 2px solid black;
+}
+
+.table-land-entitlements .parcel-id {
+  width: 14%;
+}
+.table-land-entitlements .land-use {
+  width: 24%;
+}
+.table-land-entitlements .land-area {
+  width: 10%;
+}
+.table-land-entitlements .notes {
+  width: 20%;
+}
+.table-land-entitlements .entitlement {
+  width: 10%;
+}
+.table-land-entitlements .action {
+  width: 8%;
+}
+.table-land-entitlements tbody .parcel-name,
+.table-land-entitlements tbody .parcel-id {
+  border-bottom-color: #0b0c0c;
+}
+.table-land-entitlements tbody th,
+.table-land-entitlements tbody td {
+  vertical-align: top;
+}
+.table-land-entitlements tbody input {
+  text-align: right;
+}
+.table-land-entitlements tbody .total {
+  font-weight: 700;
+}
+.table-land-features tbody th {
+  font-weight: normal;
+}
+@media (min-width: 641px) {
+  .table-land-features .text-warning {
+    float: right;
+  }
+}
+.table-land-parcels tbody th {
+  font-weight: normal;
+}
+.table-land-parcels .tag {
+  display: inline-block;
+  padding: 0 20px;
+}
+.table-land-parcels .tag-done {
+  background-color: #00823b;
+  color: white;
+}
+@media (min-width: 641px) {
+  .table-land-parcels .checked {
+    text-align: right;
+  }
+}
+.table-land-removal tbody th {
+  font-weight: normal;
+}
+@media (min-width: 641px) {
+  .table-land-removal tbody th {
+    width: 30%;
+  }
+}
+@media (min-width: 641px) {
+  .table-land-removal-summary tbody th {
+    width: 30%;
+  }
+}
+.table-business-search tbody th,
+.table-business-search tbody td {
+  vertical-align: top;
+}
+.table-summary tr:first-child th, .table-summary tr:first-child td {
+  border-top: 1px solid #bfc1c3;
+}
+.table-summary-heading {
+  position: relative;
+}
+.table-summary-heading a {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+.table-summary-title {
+  vertical-align: top;
+  width: 45%;
+}
+.table-summary-content ul {
+  margin: 0;
+}
+.table-summary-action {
+  padding-right: 0;
+  text-align: right;
+}
+
+.js-table-sortable [data-sort] {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  text-decoration: underline;
+}
+.js-table-sortable .sorting-asc:after,
+.js-table-sortable .sorting-desc:after {
+  margin-left: 4px;
+  position: absolute;
+}
+.js-table-sortable .sorting-asc:after {
+  content: '▲';
+}
+.js-table-sortable .sorting-desc:after {
+  content: '▼';
+}
+
 .page-header {
   margin: 10px 0 30px 0;
   padding: 0 0 20px 0;
@@ -2599,6 +2761,22 @@ details .hcard-adr {
   float: right;
   font-size: 16px;
   margin-top: 2px;
+}
+
+.business-list-sortable tbody th {
+  font-size: 19px;
+}
+.business-list-sortable tbody th a {
+  text-decoration: none;
+}
+.business-list-sortable tbody th a:hover {
+  text-decoration: underline;
+}
+.business-list-sortable tbody th span {
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+  color: #6f777b;
 }
 
 table.parcel-list {

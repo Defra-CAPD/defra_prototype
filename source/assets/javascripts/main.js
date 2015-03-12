@@ -6,11 +6,8 @@
 // Show/Hide content
 
 function ShowHideContent() {
-
   var self = this;
-
   self.showHideRadioToggledContent = function () {
-
     $(".block-label input[type='radio']").each(function () {
 
       var $radio = $(this);
@@ -75,7 +72,6 @@ function ShowHideContent() {
 
     });
   }
-
   self.showHideCheckboxToggledContent = function () {
 
     $(".block-label input[type='checkbox']").each(function() {
@@ -115,9 +111,6 @@ function ShowHideContent() {
     });
   }
 }
-
-
-// Document ready
 
 $(document).ready(function() {
 
@@ -278,6 +271,19 @@ function toggleTabs() {
 };
 
 
+// Table sortable
+
+function tableSortable() {
+
+  if ($('.js-table-sortable').length>0) {
+
+    $('.js-table-sortable').stupidtable();
+
+  }
+
+};
+
+
 // Multiple checkboxes
 
 function formMultipleCheckboxes() {
@@ -388,7 +394,8 @@ function collapsibles() {
         // Add attributes to collapsible content
         $content.attr({
           'id' : $id,
-          'aria-hidden' : true
+          'aria-hidden' : true,
+          'style' : 'display: none;'
         });
 
 
@@ -400,7 +407,7 @@ function collapsibles() {
           var state = $(this).attr('aria-expanded') === 'false' ? true : false;
 
           $button.attr('aria-expanded', state);
-          $content.attr('aria-hidden', !state);
+          $content.attr('aria-hidden', !state).toggle();
 
         });
 
@@ -437,7 +444,8 @@ function toggleContent() {
     // Add attributes to toggle content
     $content.attr({
       'id' : $id,
-      'aria-hidden' : true
+      'aria-hidden' : true,
+      'style' : 'display: none;'
     });
 
 
@@ -449,7 +457,7 @@ function toggleContent() {
       var state = $(this).attr('aria-expanded') === 'false' ? true : false;
 
       $link.attr('aria-expanded', state);
-      $content.attr('aria-hidden', !state);
+      $content.attr('aria-hidden', !state).toggle();
 
     });
 
@@ -471,6 +479,6 @@ function toggleContent() {
   showDialog();
   collapsibles();
   toggleContent();
+  tableSortable();
 
 })();
-
