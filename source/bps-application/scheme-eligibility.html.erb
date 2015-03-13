@@ -14,18 +14,17 @@ layout: layout-2-1-columns
     </hgroup>
   </header>
 
-  <h2 class="heading-medium">Business eligibility</h2>
+  <p class="lede">Before you apply, check you meet all the eligibility requirements for this scheme.</p>
+
+
+  <h2 class="heading-medium">Eligibility requirements</h2>
+
 
   <div class="check-list">
     <div class="done js-hidden" id="land-entitlements-pass">
       <h3 class="heading-small">Land and entitlements</h3>
 
-      <p><%= data.business.name %> has</p>
-
-      <ul class="list-bullet">
-        <li>over 5ha of land</li>
-        <li>over 5 entitlements</li>
-      </ul>
+      <p><%= data.business.name %> has enough land and entitlements.</p>
     </div>
 
     <div class="not-met js-hidden" id="land-entitlements-fail">
@@ -69,17 +68,28 @@ layout: layout-2-1-columns
 
     </div>
 
-    <div class="in-progress" id="land-use-fail">
+<!--
+    <div class="in-progress" id="cross-compliance-fail">
       <h3 class="heading-small">Cross compliance</h3>
 
-      <p><a href="">You need to tell us about any cross compliance rules that apply to this business</a></p>
+      <p><a href="">Tell us about any cross compliance rules that apply to this business</a></p>
 
     </div>
+  -->
+
+    <div class="done" id="cross-compliance-pass">
+      <h3 class="heading-small">Cross compliance</h3>
+
+      <p>You have told us about any cross compliance rules that apply to this business.</p>
+
+    </div>
+    <!--
   </div>
 
   <h2 class="heading-medium">Greening</h2>
 
   <div class="check-list">
+  -->
     <div class="in-progress js-hidden" id="greening-land-use-fail">
       <h3 class="heading-small">Not enough land</h3>
 
@@ -113,15 +123,25 @@ layout: layout-2-1-columns
       <h3 class="heading-small">Ecological focus areas (EFAs)</h3>
       <p>Less than 5% of <%= data.business.name %>'s land has been declared as EFAs.</p>
 
-      <h3 class="heading-small">What you can do</h3>
+      <div class="alert-info" role="alert">
 
-      <ul class="list-bullet">
-        <li><a href="/land">add more EFAs to your land</a></li>
-        <li><a href="/efas">select which EFAs to use</a></li>
-        <li><a href="#">use EFAs from your organic land</a></li>
+        <div class="alert-message">
+
+          <h3 class="heading-small">What you can do</h3>
+
+          <ul class="list-bullet">
+            <li><a href="/land">add more EFAs to your land</a></li>
+            <li><a href="/efas">select which EFAs to use</a></li>
+            <li><a href="#">use EFAs from your organic land</a></li>
+          </ul>
+
+        </div>
+
+      </div>
     </div>
   </div>
 
+<!--
   <div>
     <h2 class="heading-medium">Apply for the basic payment scheme</h2>
 
@@ -131,6 +151,17 @@ layout: layout-2-1-columns
 
     <p><a class="button" href="/bps-application/application-warnings">Apply for the basic payment scheme</a></p>
   </div>
+-->
+
+
+  <h2 class="heading-medium">Apply for this scheme</h2>
+
+  <p>You can still apply, but you may lose out on up to 30% of your payment because you don't meet the Ecological Focus Area requirement.</p>
+
+  <p class="bold-small">You must apply for the scheme by 15 May 2015.</p>
+
+
+  <p><a class="button" href="/bps-application/application-warnings">Apply for the basic payment scheme</a></p>
 
 <% end %>
 

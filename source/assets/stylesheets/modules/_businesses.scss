@@ -2,8 +2,20 @@
 // List of businesses
 
 .business-list{
+  margin: $gutter 0;
+  border-top: 1px solid $border-colour;
   li{
-    padding-bottom: 20px;
+    padding: 13px 0 13px 0;
+    border-bottom: 1px solid $border-colour;
+  }
+}
+
+.application-list{
+  margin: $gutter 0;
+  border-top: 1px solid $border-colour;
+  li{
+    padding: 13px 0 13px 0;
+    border-bottom: 1px solid $border-colour;
   }
 }
 
@@ -14,3 +26,72 @@
     float: right;
   }
 }
+
+
+.inline-modal{
+  clear: both;
+  border: 4px solid $border-colour;
+  padding: 15px 0 5px 15px;
+  margin: 30px 15px 45px 0;
+  &>*{
+    margin-top: 0;
+  }
+}
+
+.action-list{
+  li{
+    margin-bottom: 10px;
+  }
+}
+
+.business-table{
+  td{
+    font-size: 19px;
+    vertical-align: top;
+    &>*{
+      margin-top: 0;
+    }
+  }
+}
+
+.business-filter{
+  float: right;
+  select{
+    margin-left: 10px;
+  }
+  label{
+    font-size: 16px;
+  }
+}
+
+.new-message-indicator{
+  float: right;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.bps-submitted-indicator{
+  float: right;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+
+.business-list-sortable{
+  tbody th{
+    font-size: 19px;
+    a{
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+      span{
+        display: block;
+        font-size: 16px;
+        font-weight: normal;
+        color: $secondary-text-colour;
+      }
+  }
+}
+

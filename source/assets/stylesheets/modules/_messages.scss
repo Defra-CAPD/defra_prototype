@@ -15,8 +15,13 @@
     .message-date{
       display: inline-block;
       float: right;
-      margin-top:  4px;
-      width: 120px;
+      margin-top:  8px;
+      font-size: 16px;
+    }
+    .message-content{
+      display: block;
+      margin: 20px;
+      //font-size: 16px;
     }
     .delete{
       display: block;
@@ -30,9 +35,6 @@
       display: inline-block;
       color: $text-colour;
       margin-bottom: 0;
-      //max-width: 400px;
-
-      summary::-webkit-details-marker { display:none; }
 
       summary{
         text-decoration: underline;
@@ -47,9 +49,53 @@ table.messages {
   }
 }
 
+.new-tag{background: #DF3034;
+  color: #FFF;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 2px 5px;
+}
 
-.tag{
-  background: $mellow-red;
-  color: $white;
+.new-message{
+  summary{
+    font-weight: bold;
+  }
+}
+
+.filter{
+  font-size: 16px;
+  input{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  label{
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+
+  .single-row-select{
+    border: 1px solid #BFC1C3;
+    padding: 5px 20px 5px 10px;
+    font-size: 12px;
+    width: 100%;
+    background: #FFF;
+    background-image: url('/assets/images/dropdown-arrow-small.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-box-shadow: 1px 1px 1px #FFF;
+    -moz-box-shadow: 1px 1px 1px #fff;
+    box-shadow: 1px 1px 1px #FFF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
 
 }
+

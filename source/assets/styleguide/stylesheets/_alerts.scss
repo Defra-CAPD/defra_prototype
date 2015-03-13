@@ -5,7 +5,7 @@
 	border-left: 4px solid $error-colour;
 	clear: both;
 	margin: 0 0 1.05263em;
-	padding: 1.05263em;
+	padding: 0 1.05263em;
 }
 
 .alert-success {
@@ -16,7 +16,7 @@
 
 .alert-info {
 	@extend %alert;
-	background-color: rgba($grey-2, .1);
+	//background-color: rgba($grey-2, .1);
 	border-color: $grey-2;
 }
 

@@ -24,7 +24,7 @@
   }
 
   .feature-length {
-    width: 12%;
+    width: 16%;
   }
 
   .feature-area {
@@ -40,7 +40,29 @@
     padding-right: 0;
   }
 
+  .hedge-sides{
+    &::first-child{
+      margin-bottom: 10px;
+    }
+    .side-label{
+      display: inline-block;
+      width: 50px;
+    }
+    .side-value{
+      display: inline-block;
+      width: 70px;
+      margin-left: 15px;
+      text-align: right;
+      padding: 5px;
+    }
+    span.side-value{
+      width: 60px;
+    }
 
+    input.side-value{
+
+    }
+  }
 
 
 
@@ -66,7 +88,7 @@
   .total {
 
     td, th{
-      border-top: 2px solid $black; 
+      border-top: 2px solid $black;
     }
 
     .calculate-button{
