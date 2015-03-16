@@ -3488,8 +3488,8 @@ table .last {
   width: 12%;
   padding-right: 0;
 }
-.efa-table .hedge-sides::first-child {
-  margin-bottom: 10px;
+.efa-table .hedge-sides .side-2 {
+  margin-top: 10px;
 }
 .efa-table .hedge-sides .side-label {
   display: inline-block;
@@ -3504,6 +3504,10 @@ table .last {
 }
 .efa-table .hedge-sides span.side-value {
   width: 60px;
+}
+.efa-table .claim-opposite {
+  float: right;
+  color: #6f777b;
 }
 .efa-table .parcel-name {
   vertical-align: top;
