@@ -1,0 +1,62 @@
+---
+layout: layout-2-1-columns
+---
+
+<% content_for :breadcrumbs do %>
+<p id="breadcrumb"><a href="/business-january">Back to <%= data.business.name %></a></p>
+<% end %>
+
+<% content_for :column1 do %>
+
+<header class="page-header">
+  <hgroup>
+    <h1>Environmental stewardship schemes</h1>
+  </hgroup>
+</header>
+
+<form action="" class="form" id="sa-2-3-form">
+  <div class="form-group form-group-compound inline">
+     <legend class="form-label">Did any of your land parcels have the land use code 'SA2' or 'SA3', eg woodland block or salt marsh?</legend>
+     <label class="block-label">
+      <input type="radio" name="block-1" value="yes" class="js-multi-opt"> Yes
+    </label>
+    <label class="block-label">
+      <input type="radio" name="block-1" value="no" class="js-multi-opt"> No
+    </label>
+  </div>
+
+  <div class="form-group form-group-compound inline">
+    <legend class="form-label">Are they are part of an environmental stewardship scheme, eg Entry Level Stewardship?</legend>
+    <label class="block-label">
+     <input type="radio" name="block-2" value="yes" class="js-multi-opt"> Yes
+   </label>
+   <label class="block-label">
+    <input type="radio" name="block-2" value="no" class="js-multi-opt"> No
+  </label>
+  </div>
+
+  <div class="form-group form-group-compound inline">
+    <legend class="form-label">Were they used to activate entitlements in 2008?</legend>
+    <label class="block-label">
+      <input type="radio" name="block-3" value="yes" class="js-multi-opt"> Yes
+    </label>
+    <label class="block-label">
+      <input type="radio" name="block-3" value="no" class="js-multi-opt"> No
+    </label>
+  </div>
+
+  <div class="panel-indent js-hidden" id="sa-2-3-result">
+    <p class="text">Land parcels that had SA2 and SA3 land use codes aren't automatically used to activate entitlements.</p>
+
+    <p class="text">Make sure you increase the area to activate for your land that used to be SA2 and SA3 on the entitlements table.</p>
+  </div>
+</form>
+
+<p id="sa-2-3-button-false"><a href="/bps-application/application-summary" class="button">Save changes</a></p>
+<p id="sa-2-3-button-true" class="js-hidden"><a href="/bps-application/land-table-data" class="button">Activate entitlements</a></p>
+
+<% end %>
+
+<% content_for :column2 do %>
+
+<% end %>
