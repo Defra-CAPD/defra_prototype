@@ -75,10 +75,8 @@ efaTarget = ((totalefaArea / totalEligibleArea) * 100).round(2)
 
   <h2 class="heading-medium">Check your ecological focus areas</h2>
 
-  <ol class="list-number text">
-    <li>Deselect features or land uses that are being used in other schemes</li>
-    <li>If you want to claim for both sides of a hedge, add the length of the other side that's eligible as an EFA</li>
-  </ol>
+    <p class="text">Deselect features or land uses that are being used in other schemes.</p>
+    <p class="text">Add the other side of heges if you want to claim for those as well (for example, if you maintain the other side of a hedge that runs along the edge of your holding).</p>
 
 
   <form class="" method="post" action="/">
@@ -119,7 +117,18 @@ efaTarget = ((totalefaArea / totalEligibleArea) * 100).round(2)
           <span class="parcel-ref"><%= p.id %></span>
         </th>
         <% end %>
-        <% if u.featureLength %>
+        <% if u.efa == "hedge" %>
+        <td>
+          <a href="#side-2" class="claim-opposite js-toggle">show both sides</a>
+          <label>
+            <input type="checkbox" checked class="feature-selected js-select-row">
+
+              Hedge
+
+          </label>
+        </td>
+
+        <% elsif %>
         <td>
           <label>
             <input type="checkbox" checked class="feature-selected js-select-row">
@@ -149,7 +158,7 @@ efaTarget = ((totalefaArea / totalEligibleArea) * 100).round(2)
               <span class="side-label">Side 1</span>
               <span class="side-value"><%= u.featureLength %></span>
             </li>
-            <li class="side-2">
+            <li class="side-2 js-hidden" id="side-2">
               <label class="side-label">Side 2</label>
               <input type="text" class="form-control side-value" value="00.00" >
             </li>

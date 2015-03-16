@@ -41,8 +41,8 @@
   }
 
   .hedge-sides{
-    &::first-child{
-      margin-bottom: 10px;
+    .side-2{
+      margin-top: 10px;
     }
     .side-label{
       display: inline-block;
@@ -65,6 +65,10 @@
   }
 
 
+  .claim-opposite{
+    float: right;
+    color: $secondary-text-colour;
+  }
 
   .parcel-name {
     vertical-align: top;
