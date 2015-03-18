@@ -2753,14 +2753,38 @@ table tfoot {
 
 .new-message-indicator {
   float: right;
-  font-size: 16px;
   margin-top: 2px;
+  margin-left: 10px;
+  min-width: 25px;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.3;
+  background: #df3034;
+}
+.new-message-indicator a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 3px 5px 1px 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
+  width: 60px;
 }
 
 .bps-submitted-indicator {
   float: right;
-  font-size: 16px;
   margin-top: 2px;
+  background: #006435;
+}
+.bps-submitted-indicator a {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3px 5px 1px 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
 }
 
 .business-list-sortable tbody th {
