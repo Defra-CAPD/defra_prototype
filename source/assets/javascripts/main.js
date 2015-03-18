@@ -271,6 +271,14 @@ function toggleTabs() {
 };
 
 
+// Link to tabs on page
+
+jQuery(window).bind('hashchange', function () { //detect hash change
+    var hash = window.location.hash.slice(1); //hash to string (= "section-2")
+    jQuery('#' + hash + '-link').trigger("click");
+});
+
+
 // Table sortable
 
 function tableSortable() {

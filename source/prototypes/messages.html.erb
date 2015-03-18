@@ -1,0 +1,36 @@
+---
+layout: layout-2-1-columns
+---
+
+<% content_for :column1 do %>
+
+  <header class="page-header">
+    <hgroup>
+      <h1>Prototypes for the <br>Rural Payments service</h1>
+    </hgroup>
+  </header>
+
+
+  <h2 class="heading-medium"><a href="/">Version 1</a></h2>
+
+  <p>
+    Applications and messages live at the top level, but you can filter messages by business.
+    If you click on a 'new message' tag it jumps to the messages tab and sets the filter to that business.
+  </p>
+
+
+
+  <h2 class="heading-medium"><a href="/index-2">Version 2</a></h2>
+
+  <p>
+    Applications and messages have been moved down to the business level.
+    However, they're still represented on this screen as clickable tags.
+    This lets agents see quickly which businesses need their attention.
+  </p>
+
+  <p><a href="/index-3">Here's a version with lots of businesses (which triggers search and pagination)</a>.</p>
+
+  <p>On the business page you can set email alerts for new messages.</p>
+
+<% end %>
+
