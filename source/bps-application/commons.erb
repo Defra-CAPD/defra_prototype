@@ -1,0 +1,70 @@
+---
+layout: layout-full-width
+---
+
+<% content_for :breadcrumbs do %>
+  <p id="breadcrumb"><a href="/bps-application/application-summary">Back to application summary</a></p>
+<% end %>
+
+<% content_for :column1 do %>
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <header class="page-header">
+      <hgroup>
+        <h1>Activate entitlements for commons</h1>
+      </hgroup>
+    </header>
+  </div>
+</div>
+
+<table class="commons-table">
+  <thead>
+    <tr>
+      <th class="common-name">Common land name</th>
+      <th class="common-number">Common land number</th>
+      <th class="common-owner">Common owner</th>
+      <th class="rights-type">Type of rights</th>
+      <th class="rights-number numeric">Number of rights</th>
+      <th class="rights-activate">Activate rights</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Redrock</td>
+      <td rowspan="2">CL0002</td>
+      <td rowspan="2">Yes</td>
+      <td>Cattle</td>
+      <td class="numeric">10</td>
+      <td>
+        <label for="" class="visuallyhidden">Activate rights</label>
+        <input type="checkbox" name="activate_rights" value="yes">
+      </td>
+    </tr>
+    <tr>
+      <td>Sheep</td>
+      <td class="numeric">5</td>
+      <td>
+        <label for="" class="visuallyhidden">Activate rights</label>
+        <input type="checkbox" name="activate_rights" value="yes">
+      </td>
+    </tr>
+    <tr>
+      <td>Grisedale</td>
+      <td>CL0003</td>
+      <td>Yes</td>
+      <td>Pigs</td>
+      <td class="numeric">5</td>
+      <td>
+        <label for="" class="visuallyhidden">Activate rights</label>
+        <input type="checkbox" name="activate_rights" value="yes">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  <a href="/bps-application/application-summary" class="button">Save</a>
+</p>
+
+<% end %>
