@@ -1,0 +1,43 @@
+---
+layout: layout-full-width
+---
+
+<% content_for :breadcrumbs do %>
+  <%= partial(:'partial-breadcrumbs', :locals => { breadcrumb: [{ title: "Home", url: "/" }, { title: data.business.name, url: "/business"}] }) %>
+<% end %>
+
+<% content_for :column1 do %>
+
+
+  <header class="page-header">
+    <hgroup>
+      <h1><%= data.business.name %>
+      </h1>
+                  <h2 class="subtitle">
+              Bodmin Agr Ltd. Monument Way, Bodmin PL31 1NZ
+            </h2>
+    </hgroup>
+  </header>
+
+  <div class="text">
+
+    <h2 class="heading-medium">You’ve completed the online part of your application.</h2>
+    <p>The Rural Payments Agency will be in touch with you during April to help you complete the remainder of your application. </p>
+    <p><a href="">Go to the RPA website for more information</a></p>
+
+
+    <h2 class="heading-medium">Give someone else permission to edit this business</h2>
+    <p>You can give agents or other people you trust access so they can check or complete applications on your behalf.</p>
+
+    <p><a href="">Give someone access</a></p>
+
+
+    <h2 class="heading-medium">Edit your business details</h2>
+    <p>View and update information about this business.</p>
+
+    <p><a href="">Edit your business details</a></p>
+
+  </div>
+
+
+<% end %>

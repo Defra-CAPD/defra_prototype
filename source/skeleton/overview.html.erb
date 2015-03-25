@@ -1,5 +1,5 @@
 ---
-layout: layout-2-1-columns
+layout: layout-full-width
 ---
 
 <% content_for :breadcrumbs do %>
@@ -8,69 +8,74 @@ layout: layout-2-1-columns
 
 <% content_for :column1 do %>
 
+
   <header class="page-header">
     <hgroup>
-      <h1><%= data.business.name %></h1>
+      <h1><%= data.business.name %>
+      </h1>
+                  <h2 class="subtitle">
+              Bodmin Agr Ltd. Monument Way, Bodmin PL31 1NZ
+            </h2>
     </hgroup>
   </header>
 
 
-  <div class="inline-modal" id="give-access">
-    <h2 class="heading-medium">Want to give someone else access to this business?</h2>
+  <div class="inline-modal text" id="give-access">
+
+    <h2 class="heading-medium">Do you want to give someone else permission to edit this business?</h2>
     <p>You can give agents or other people you trust access so they can check or complete applications on your behalf.</p>
-    <p class="button">Give someone access</p> <a href="#give-access" class="js-toggle">No thanks</a>
+    <p class="button">Give someone access</p> <a href="#give-access" class="js-toggle">No</a>
+
   </div>
 
 
-  <h2 class="heading-medium">1. Complete your business details</h2>
-  <p>Tell us about the people accountable for this business.</p>
-  <p><a href="scheme-apply">Complete your business details</a></p>
+
+  <ul class="account-links">
+    <li><a href="account">Business details</a></li>
+  </ul>
 
 
-  <h2 class="heading-medium">2. Check your business is eligible</h2>
-  <p>Check that this business is eligible for rural payments.</p>
-  <p><a href="scheme-apply">Check you are eligible</a></p>
 
 
-  <h2 class="heading-medium">3. Check and update your land parcels</h2>
-  <p>0 out of 13 land parcels have been checked so far.</p>
-  <p><a href="/land">Check your land parcels</a></p>
+
+<div class="grid-row">
+
+      <div class="column-two-thirds">
 
 
-  <h2 class="heading-medium">4. Apply for schemes</h2>
-  <p>You must apply for the Basic Payment Scheme before 10 June 2015.</p>
-  <p><a href="scheme-eligibility">Apply for the Basic Payment Scheme</a></p>
+          <h2 class="heading-medium">1. Complete your business details</h2>
 
 
-<% end %>
+          <p><a href="scheme-apply">Tell us about the people accountable for this business</a></p>
 
-<% content_for :column2 do %>
+          <h2 class="heading-medium">2. Give permission to someone else</h2>
+          <p><a href="/permissions-february/add-people">Give a trusted person permission to do your application</a></p>
 
-  <h2 class="heading-small">Business details</h2>
+          <h2 class="heading-medium">3. Update your details</h2>
+          <p><a href="/business-details">Update your personal or business details</a></p>
 
-  <div class="font-xsmall">
-    <p>
-      Bodmin Agr Ltd.<br>
-      Monument Way <br>
-      Bodmin <br>
-      PL31 1NZ <br>
-      United Kingdom
-    </p>
+      </div>
 
-    <p>
-      Email: <a href="">info@bodminagrltd.co.uk</a> <br>
-      Landline: 0300 790 6802<br>
-      Mobile: 0300 123 0798<br>
-    </p>
-  </div>
+      <div class="column-third">
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+
 
 <!--
-  <%= partial "partial-map", :locals => { :map => 'business'} %>
--->
 
   <ul class="action-list font-xsmall">
     <li><a href="business-details">Full business details</a></li>
     <li><a href="#">Manage access permissions</a></li>
   </ul>
+
+-->
 
 <% end %>
