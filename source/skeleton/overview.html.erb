@@ -1,0 +1,81 @@
+---
+layout: layout-full-width
+---
+
+<% content_for :breadcrumbs do %>
+  <%= partial(:'partial-breadcrumbs', :locals => { breadcrumb: [{ title: "Home", url: "/" }, { title: data.business.name, url: "/business"}] }) %>
+<% end %>
+
+<% content_for :column1 do %>
+
+
+  <header class="page-header">
+    <hgroup>
+      <h1><%= data.business.name %>
+      </h1>
+                  <h2 class="subtitle">
+              Bodmin Agr Ltd. Monument Way, Bodmin PL31 1NZ
+            </h2>
+    </hgroup>
+  </header>
+
+
+  <div class="inline-modal text" id="give-access">
+
+    <h2 class="heading-medium">Do you want to give someone else permission to edit this business?</h2>
+    <p>You can give agents or other people you trust access so they can check or complete applications on your behalf.</p>
+    <p class="button">Give someone access</p> <a href="#give-access" class="js-toggle">No</a>
+
+  </div>
+
+
+
+  <ul class="account-links">
+    <li><a href="account">Business details</a></li>
+  </ul>
+
+
+
+
+
+<div class="grid-row">
+
+      <div class="column-two-thirds">
+
+
+          <h2 class="heading-medium">1. Complete your business details</h2>
+
+
+          <p><a href="scheme-apply">Tell us about the people accountable for this business</a></p>
+
+          <h2 class="heading-medium">2. Give permission to someone else</h2>
+          <p><a href="/permissions-february/add-people">Give a trusted person permission to do your application</a></p>
+
+          <h2 class="heading-medium">3. Update your details</h2>
+          <p><a href="/business-details">Update your personal or business details</a></p>
+
+      </div>
+
+      <div class="column-third">
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+<!--
+
+  <ul class="action-list font-xsmall">
+    <li><a href="business-details">Full business details</a></li>
+    <li><a href="#">Manage access permissions</a></li>
+  </ul>
+
+-->
+
+<% end %>
