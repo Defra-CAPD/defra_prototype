@@ -3483,6 +3483,10 @@ table .last {
   margin-bottom: -10px;
 }
 
+.commons-table td, .commons-table th {
+  vertical-align: top;
+}
+
 .efa-table td, .efa-table .form-control, .efa-table .form-control-textarea {
   vertical-align: middle;
   color: #6f777b;
